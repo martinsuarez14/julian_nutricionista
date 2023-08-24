@@ -1,0 +1,11 @@
+
+:root {
+  --color-primary: #00c2cb;
+  --color-bg-black: #000000;
+  --color-bg-white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
