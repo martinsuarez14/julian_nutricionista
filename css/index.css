@@ -8,12 +8,12 @@
 
 @font-face {
   font-family: 'Benedict';
-  src: url(../Fonts/Benedict/Benedict.ttf) format('truetype');
+  src: url(../font/Benedict/Benedict.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Arista Pro';
-  src: url(../Fonts/Arista-pro/Arista-Pro-Alternate-Light-trial.ttf) format('truetype');
+  src: url(../font/Arista-pro/Arista-Pro-Alternate-Light-trial.ttf) format('truetype');
 }
 
 * {
@@ -22,6 +22,8 @@
   font-size: 18px;
 }
 
+
+/* HEADER  */
 
 .benedict {
   font-family: 'Benedict', sans-serif;
@@ -39,14 +41,92 @@
   color: var(--color-bg-white);
 }
 
+#saludo-inicial {
+  color: var(--color-bg-black);
+}
+
 
 /* HERO */
 
 .hero-container p {
   font-family: 'Arista Pro';
+  font-size: 1.5rem;
+}
+
+#typewriter {
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 
+/* SOBRE MI */
+.sobre-mi-contenedor {
+  padding: 30px 0;
+}
+
+.sobre-mi-contenedor figure {
+  width: 25rem;
+}
+
+.sobre-mi-contenedor figure img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.sobre-mi-contenedor div {
+  max-width: 500px;
+}
+
+.sobre-mi-contenedor h1 {
+  font-family: 'Benedict', sans-serif;
+  font-size: 3rem;
+}
+
+.sobre-mi-contenedor p {
+  font-family: 'Arista Pro';
+  text-align: justify;
+  margin: 10px;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+/* CONSULTAS */
+
+.consultas-container {
+  padding: 30px 0;
+}
+
+.consultas-container h1 {
+  font-family: 'Benedict', sans-serif;
+  font-size: 3rem;
+}
+
+.consultas-container ul li {
+  list-style-type: none;
+}
+
+.consultas-container ul li figure {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.consultas-container ul li figure img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.consultas-container ul li figure figcaption {
+  font-family: 'Arista Pro';
+  font-style: bold;
+  margin: 20px 20px;
+  text-align: left;
+}
+
+.whatsapp {
+  background-color: var(--color-primary);
+}
 
 
 /* FOOTER */
@@ -58,4 +138,23 @@
 .footer-container p,
 .footer-container ul li a {
   color: var(--color-bg-white);
+}
+
+
+/* BUTTON TOP */
+
+#scrollButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 50px;
+  border: none;
+  transition: all 0.4s ease;
+  background-color: transparent;
+}
+
+#scrollButton i {
+  font-size: 2rem;
+  color: var(--color-primary);
 }
